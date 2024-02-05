@@ -7,3 +7,4 @@ numpy
 tqdm
 gpt4all
 streamlit-option-menu
+matplotlib
