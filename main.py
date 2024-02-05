@@ -21,7 +21,7 @@ num_ftrs = model_ft.fc.in_features
 model_ft.fc = nn.Linear(num_ftrs, get_classes_len())
 
 model_ft = model_ft.to(device)
-model_ft.load_state_dict(torch.load('dermalyze-ai-resnet-ft-4_exp.pth'))
+model_ft.load_state_dict(torch.load('dermalyze-ai-resnet-ft-4_exp.pth', map_location=torch.device(device)))
 model_ft.eval()
 
 uploaded_img = st.file_uploader("Upload an Image! (jpg)")
