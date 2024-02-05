@@ -1,0 +1,8 @@
+pytorch
+opencv-python-headless
+Pillow
+streamlit
+numpy
+tqdm
+gpt4all
+streamlit-option-menu
