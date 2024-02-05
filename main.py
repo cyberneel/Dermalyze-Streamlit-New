@@ -12,7 +12,7 @@ import streamlit as st
 from modules import get_classes_len, visualize_model_predictions
 
 
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+device = "cpu"
 
 model_ft = models.resnet18(weights='IMAGENET1K_V1')
 num_ftrs = model_ft.fc.in_features

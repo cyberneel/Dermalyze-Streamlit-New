@@ -24,7 +24,7 @@ data_transforms = {
     ]),
 }
 
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+device = "cpu"
 
 class_names = ['acne', 'eczema', 'melanoma & moles', 'psoriasis']
 
